@@ -1,0 +1,36 @@
+﻿<Window x:Class="TicTacToe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="674">
+    <Canvas>
+        <GroupBox x:Name="Stats" Height="110" Header="Stats
+                  " Width="276" Canvas.Left="358" Canvas.Top="28" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel Height="86">
+                <Label x:Name="lblPlayer1Wins" Content="Player 1 Wins: " />
+                <Label x:Name="lblPlayer2Wins" Content="Player 2 Wins: " />
+                <Label x:Name="lblCountTies" Content="Ties: " />
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnStart" Content="Start" Canvas.Left="451" Canvas.Top="148" Height="30" Width="90" Click="btnStart_Click" />
+        <GroupBox x:Name="Status" Height="65" Header="Status" Width="212" Canvas.Left="71" Canvas.Top="333" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Label x:Name="playerStatus" Content="Player 1's turn" FontSize="15"/>
+        </GroupBox>
+        <Label x:Name="lbl00" Content="X" Canvas.Left="32" Canvas.Top="28" FontSize="55" MouseLeftButtonDown="PlayerMoveClick" Background="Gray" HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" BorderThickness="3,3,1.5,1.5" BorderBrush="Black" Foreground="#FF8C0000"/>
+        <Label x:Name="lbl01" Content="X" Canvas.Left="122" Canvas.Top="28" FontSize="55" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="PlayerMoveClick" Height="90" Width="84" HorizontalContentAlignment="Center" Background="Gray" BorderBrush="Black" BorderThickness="1.5,3,1.5,1.5" Foreground="#FF8C0000"/>
+        <Label x:Name="lbl02" Content="X" Canvas.Left="206" Canvas.Top="28" FontSize="55" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" HorizontalContentAlignment="Center" Width="90" Background="Gray" BorderBrush="Black" BorderThickness="1.5,3,3,1.5" Foreground="#FF8C0000"/>
+
+        <Label x:Name="lbl10" Content="O" Canvas.Left="32" Canvas.Top="118" FontSize="55" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" Width="90" HorizontalContentAlignment="Center" Background="Gray" BorderBrush="Black" BorderThickness="3,1.5,1.5,1.5" Foreground="#FF0038A5"/>
+        <Label x:Name="lbl11" Content="O" Canvas.Left="122" Canvas.Top="118" FontSize="55" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" Width="84" HorizontalContentAlignment="Center" Background="Gray" BorderBrush="Black" BorderThickness="1.5,1.5,1.5,1.5" Foreground="#FF0038A5"/>
+        <Label x:Name="lbl12" Content="O" Canvas.Left="206" Canvas.Top="118" FontSize="55" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" Width="90" HorizontalContentAlignment="Center" Background="Gray" BorderThickness="1.5,1.5,3,1.5" BorderBrush="Black" Foreground="#FF0038A5"/>
+
+        <Label x:Name="lbl20" Content="X" Canvas.Left="32" Canvas.Top="208" FontSize="55" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" HorizontalContentAlignment="Center" Width="90" Background="Gray" BorderBrush="Black" BorderThickness="3,1.5,1.5,3" Foreground="#FF8C0000"/>
+        <Label x:Name="lbl21" Content="X" Canvas.Left="122" Canvas.Top="208" FontSize="55" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" Width="84" Background="Gray" HorizontalContentAlignment="Center" BorderBrush="Black" BorderThickness="1.5,1.5,1.5,3" Foreground="#FF8C0000"/>
+        <Label x:Name="lbl22" Content="X" Canvas.Left="206" Canvas.Top="208" FontSize="55" HorizontalAlignment="Left" VerticalAlignment="Center" MouseLeftButtonDown="PlayerMoveClick" Height="90" Background="Gray" HorizontalContentAlignment="Center" Width="90" BorderBrush="Black" BorderThickness="1.5,1.5,3,3" Foreground="#FF8C0000"/>
+        <Canvas Height="434" Width="674"/>
+
+    </Canvas>
+</Window>
